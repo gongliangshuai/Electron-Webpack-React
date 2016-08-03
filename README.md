@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # electron-quick-start
 
 **Clone and run for a quick way to see an Electron in action.**
@@ -30,3 +31,7 @@ npm install && npm start
 Learn more about Electron and its API in the [documentation](http://electron.atom.io/docs/latest).
 
 #### License [CC0 (Public Domain)](LICENSE.md)
+=======
+# Electron-Webpack-React
+Electron查询机应用
+>>>>>>> 6a9d8eefe6c097c30ccb000e4d5ba18fee4587d6
