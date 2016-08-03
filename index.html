@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>荣誉长廊</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+  </head>
+  <body background=./img/bg.jpg>
+    <header style="height:80px;"></header>
+    <div style="    bottom: 50%;
+    position: absolute;
+    width:100%;">
+      <h1 align="center">欢迎进入某公司“荣誉长廊”</h1>
+       <h1 align="center">   查询系统</h1>
+      <br />
+      <button onclick="test();">测试</button>
+    </div>
+    <footer style="    height: 80px;
+    width: 100%;
+    position: absolute;
+    background-color: azure;
+    opacity: 0.5;
+    bottom: 0px;"></footer>
+    
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+
+    var full = false;
+    function fullscreen(){
+      var docElm = document.documentElement;
+      if(full) {
+        document.webkitCancelFullScreen();
+        full = false;
+      }else{
+        docElm.webkitRequestFullScreen(); 
+        full = true;
+      }
+      
+    }
+
+    document.onkeydown=function(event){ 
+             var e = event || window.event || arguments.callee.caller.arguments[0]; 
+             if(e && e.keyCode==27){ // 按 Esc  
+                 //要做的事情 
+alert("按 esc"); 
+               } 
+             if(e && e.keyCode==122){ // 按 F2  
+                  //要做的事情 
+fullscreen(); console.log("fullscreen");
+                }             
+              if(e && e.keyCode==13){ // enter 键 
+                  //要做的事情 
+alert("按 Enter"); 
+             } 
+         };  
+  </script>
+</html>
